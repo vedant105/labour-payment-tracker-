@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌾 Labour Payment Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🌻 Farm Labour Payment Tracker</h1>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <h3>Total Paid</h3>
+      <p id="totalPaid">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Total Advance</h3>
+      <p id="totalAdvance">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Total Entries</h3>
+      <p id="totalEntries">0</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <input type="text" id="name" placeholder="👨‍🌾 Labour Name" />
+    <input type="number" id="amount" placeholder="💰 Amount ₹" />
+    <input type="number" id="advance" placeholder="🧾 Advance ₹" />
+    <input type="date" id="date" />
+    <button onclick="addPayment()">Add Payment</button>
+  </section>
+
+  <section class="search-section">
+    <input type="text" id="search" placeholder="🔍 Search by name..." oninput="searchPayments()" />
+  </section>
+
+  <section class="table-section">
+    <h2>📋 Payment History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>👨‍🌾 Name</th>
+          <th>💰 Amount</th>
+          <th>🧾 Advance</th>
+          <th>📅 Date</th>
+          <th>❌</th>
+        </tr>
+      </thead>
+      <tbody id="paymentBody"></tbody>
+    </table>
+  </section>
+
+  <section class="summary-table-section">
+    <h2>🌾 Labour Summary</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Labour Name</th>
+          <th>Total Paid</th>
+          <th>Total Advance</th>
+        </tr>
+      </thead>
+      <tbody id="summaryTableBody"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

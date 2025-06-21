@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f1f8e9, #fffbe6); /* light green to cream */
+  color: #3b2c1a;
+}
+
+header {
+  background: #4caf50; /* rich green */
+  color: #fff;
+  padding: 20px;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background: #fffaf0; /* off-white cream */
+  border-left: 6px solid #795548; /* brown */
+  padding: 15px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  color: #5d4037;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #3e2723;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+input {
+  width: calc(25% - 12px);
+  background: #f5f5dc; /* light beige */
+  border: 1px solid #c7b299;
+  color: #4e342e;
+}
+
+button {
+  background: #8d6e63;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6d4c41;
+}
+
+.search-section input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  background: #fffbe6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #fefcf5;
+  font-size: 0.95em;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #e8d8c3;
+  color: #3e2723;
+}
+
+tr:hover {
+  background: #f2f2e2;
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .card {
+    width: 100%;
+  }
+}
